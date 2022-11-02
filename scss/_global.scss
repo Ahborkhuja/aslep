@@ -1,0 +1,35 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+}
+ul,ol{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+img{
+  width:100%;
+  height:auto;
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+.container{
+  max-width: $global_size;
+  width:100%;
+  margin: 0 auto;
+  padding: $global_pad;
+}
