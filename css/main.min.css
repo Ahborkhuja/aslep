@@ -435,14 +435,14 @@ a {
 }
 
 .one_sol__inner {
+  max-width: 1047px;
   display: flex;
   align-items: center;
-  justify-content: none;
-  gap: 173px;
+  justify-content: space-between;
+  margin-left: -100px;
 }
 
 .one_sol__img {
-  margin-left: -111px;
   max-width: 538px;
   width: 100%;
   height: 510px;
@@ -503,4 +503,11 @@ a {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+@media screen and (max-width: 870px) {
+  .one_sol__inner {
+    flex-direction: column;
+    margin-left: 0;
+  }
 }/*# sourceMappingURL=main.min.css.map */
