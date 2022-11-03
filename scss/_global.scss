@@ -8,6 +8,7 @@ html {
 }
 
 body{
+  font-family: "Gilroy";
   margin: 0;
   padding: 0;
 }
@@ -18,6 +19,10 @@ ul,ol{
   list-style: none;
   margin: 0;
   padding: 0;
+}
+select{
+  background-color: transparent;
+  border: 0;
 }
 img{
   width:100%;
@@ -32,4 +37,9 @@ a{
   width:100%;
   margin: 0 auto;
   padding: $global_pad;
+}
+@media screen and (max-width:1280px) {
+  .container{
+    padding: 20px;
+  }
 }

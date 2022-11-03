@@ -1,3 +1,85 @@
-@mixin name {
-  
+@mixin flex($ai:center,$jc:space-between) {
+  display: flex;
+  align-items: $ai;
+  justify-content: $jc;
+}
+@mixin m14($col: $tC) {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 144%;
+  color: $col;
+}
+
+@mixin r14($col: $tC) {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 144%;
+  color: $col;
+}
+
+@mixin SB14($col: $tC) {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 144%;
+  color: $col;
+}
+
+@mixin mh($col: $tC) {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 120%;
+  color: $col;
+}
+
+@mixin h2($col: $tC) {
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: $col;
+}
+
+@mixin h3R($col: $tC) {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: $col;
+}
+
+@mixin h3SB($col: $tC) {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: $col;
+}
+
+@mixin h4T($col: $tC) {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: $col;
+}
+
+@mixin Mt($col:#fff) {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: $col;
+}
+
+@mixin RC($col: $tC) {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 144%;
+  color: $col;
+}
+
+@mixin SB12($col: $tC) {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 144%;
+  color: $col;
 }

@@ -1,0 +1,87 @@
+.hero {
+  background-image: url("../../img/hero_back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__inner {
+  position: relative;
+  padding-top: 264px;
+  padding-left: 132px;
+  padding-bottom: 64px;
+}
+
+.hero__inner h2 {
+  @include mh(#fff);
+  @include flex(center, default);
+}
+
+.hero__stat {
+  margin-top: 12px;
+  display: flex;
+}
+
+.hero__stat span {
+  margin: 10px 0;
+  display: inline-block;
+  width: 0;
+  height: 52.2px;
+  border: 2px solid #00A2ED;
+}
+
+.hero__stat p {
+  max-width: 305px;
+  width: 100%;
+  padding: 10px;
+  @include h3R(#fff);
+  text-align: left;
+}
+
+.hero__btns {
+  @include flex(center, default);
+  max-width: 350px;
+  width: 100%;
+  gap: 16px;
+}
+
+.btns__btn1_link {
+  max-width: 148px;
+  width: 100%;
+  padding: 8px 32px;
+  @include SB14(white);
+  @include flex(center, default);
+  text-align: center;
+  border-radius: 50px;
+  border: 2px solid white;
+  opacity: 0.7;
+}
+
+.btns__btn2_link {
+  max-width: 148px;
+  width: 100%;
+  padding: 8px 32px;
+  @include SB14(white);
+  @include flex(center, default);
+  text-align: center;
+  background: $accent_col;
+  box-shadow: $box_sh;
+  border-radius: 40px;
+}
+
+.back_sl {
+  width:65px;
+  height: 11px;
+  background-image: url("../../img/slider.svg");
+  background-position: center;
+  position: absolute;
+  display:inline-block;
+  margin: 0 auto;
+  bottom: 42.5px;
+  z-index: 1;
+}
+@media screen and (max-width: 680px){
+  .back_sl{
+    // display: none;
+  }
+}
